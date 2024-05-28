@@ -21,7 +21,7 @@ jobs:
           name: Push Docker image to DockerHub
           command: |
             docker login -u rajanikanthn -p dckr_pat_sggBnEqLrkRSKf9Gx0Nkcvl79_U
-            docker tag circlecitest rajanikanthn/circlecitest
+            docker tag circlecitest:latest rajanikanthn/circlecitest:latest
             docker push rajanikanthn/circlecitest
 
 workflows:
